@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;  
+}
+
+body {
+  font-family: 'Open Sans';
+  color: hsl(243, 87%, 12%);
+  font-size: 1.1em;   
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cyan-link {    
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container > div:first-child {
+  padding: 20px;
+} 
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex > div, .flex > ul {
+  flex: 1; 
+}
+
+.flex > div:first-child {
+  padding-right: 20px;
+}
+
+.flex > div:last-child {
+  padding-left: 20px;  
+}
+
+/* nav styling */
+
+nav {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+
+/* form styling */
+
+form {
+  display: flex;  
+}
+
+input {
+  flex: 0.6;
+  margin: 10px 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 3px;
+  padding: 13px;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 77%);
+}
+
+button {
+  margin: 10px 0;
+  flex: 0.3;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+  background-color: hsl(224, 93%, 58%);
+  border: 1px solid hsl(224, 93%, 58%);
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 87%);
+  padding: 13px;
+  color: #ffffff;  
+}
+
+header button {
+  margin-left: 10px;
+}
+
+/* main section stying */
+.main-section::before {
+  content: "";
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+
+
+.main-section {
+  background-color:#f8f8fe;
+  margin-top: 150px;
+  padding: 50px 0px;
+  position: relative;
+}
+
+
+/* testimonial styling */
+
+.testimonial {
+  background-color: #ffffff;
+  padding: 25px;
+  width: 65%;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 87%);
+  border-radius: 5px;
+}
+
+.testimonial p {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+.testimonial img {
+  width: 18px;
+  height: 18px;
+}
+
+.testimonial .user {
+  display: flex;
+  justify-content: flex-start;    
+  margin-top: 25px;
+  font-size: 0.8em;
+}
+
+.testimonial .user h4 {
+  margin: 0;
+}
+
+.testimonial .user-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* access section styling */
+
+.access-section {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);  
+  padding: 45px 0px;
+}
+
+.access-section h3 {
+  font-size: 1.7em;
+}
+
+.access-section p {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding-right: 50px;
+}
+
+.access-section form {
+  flex-direction: column;  
+}
+
+.access-section form button {
+  
+  width: 37%;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 26%);
+}
+
+.access-section form input {  
+  width: 90%;  
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 26%);
+}
+
+/* footer styling */
+
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  padding: 80px 0;
+}
+
+footer .footer-logo {
+  padding: 20px;
+  margin-bottom: 10px;
+  fill: #fff;
+}
+
+.footer-content {
+  display: flex;
+  padding: 20px;
+}
+.footer-content > div {
+  flex: 1;
+  justify-self: center;
+}
+
+.footer-content .footer-address {
+  flex: 1;
+}
+
+.footer-list {
+  display: flex;
+  align-items: start;
+}
+.footer-list .address {
+  max-width: 364px;
+}
+.footer-list .circle {
+  margin-right: 10px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer ul li img {
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.nav-items ul li {
+  margin-left: 50px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .circle {
+  margin-right: 5px;
+}
+
+.circle-border {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
