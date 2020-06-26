@@ -1,9 +1,14 @@
 @media screen and (max-width: 915px) {
-    /* to do */
+    
     .container {
         width: 90%;
         padding: 10px;
     }
+
+    .logo {
+        width: 30%;
+    }
+
     .flex {
         flex-direction: column-reverse;        
         text-align: center;
@@ -35,7 +40,7 @@
     }
 
     nav ul li {
-        margin-left: 30px;
+        margin-left: 20px;
     }   
     
     .main-section::before {        
@@ -114,13 +119,20 @@
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        font-size: 90%;
+    }
+
     header nav > ul {
-        flex: none;
-        font-size: 80%;
+        flex: none;        
     }
 
     .main-section::before { 
         height: 50px;
         top: -50px;    
    }
+
+   footer .footer-logo {
+        max-width: 50%;
+  }
 }
